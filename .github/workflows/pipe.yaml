@@ -46,6 +46,6 @@ jobs:
                           password: ${{ secrets.DOCKER_PASSWORD }}
                      - name: Push the image to DockerHub
                        run: |
-                         docker tag capstone_p carlosetienne/capstone_project:0.0.1
+                         docker tag helloworld carlosetienne/capstone_project:0.0.1
                          docker image ls
                          docker push carlosetienne/capstone_project:0.0.1
