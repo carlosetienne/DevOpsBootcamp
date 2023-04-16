@@ -1,0 +1,10 @@
+- name: MyPlaybook
+  hosts: all
+  become: yes
+
+  tasks:
+  - name: Replace string
+    replace:
+      path: /home/hello-world/src/App.js
+      regexp: 'World'
+      replace: "DevOps"
